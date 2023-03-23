@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <style>
+     *{
+        margin: 0%;
+        padding: 0%;
+    }
+    body{
+        background-color: antiquewhite;
+       
+        
+    }
+    .header{
+        justify-content: space-between;
+    }
+    .header .container{
+        justify-content: space-between;
+        display: flex;
+        margin-top: 5px;
+    }
+    .header .logo h1{
+       margin-left: 1cm;
+       color: antiquewhite;
+    }
+ .nav-links{
+    flex: 1;
+    text-align:end;
+    text-combine-upright:initial;
+}
+.nav-links ul li{
+    list-style: none;
+    display:inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: palevioletred;
+    text-decoration: none;
+    font-size: 13px;
+
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background:cornflowerblue;
+    display:block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.row {
+  margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color:rgb(32, 187, 207);
+  padding: 10px;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+.footer p{
+   text-align: center;
+}
+
+</style>
+</head>
+<body>
+  <section class="header">
+    <div class="container">
+    <div class="logo">
+        <h1>Oduor Marvine</h1>
+    </div>
+    
+    <nav>
+       
+        <div class="nav-links">
+         <menu> <ul>
+             <li><a href="file:///C:/Users/marvine/portfolio.html">HOME</a></li>
+              <li><a href="file:///C:/marvine/portfolioabout.html">ABOUT </a></li>
+              <li><a href="file:///C:/marvine/folioservices.html">SERVICES</a></li>
+              <li><a href="file:///C:/marvine/portfoliocontact.html">CONTACT</a></li>
+            </ul></menu>
+        </div>
+        
+    </nav>
+</section>
+<section class="content">
+    <div class="main">
+
+        <h1>MY SERVICES</h1>
+        <hr>
+       
+        <!-- Portfolio Gallery Grid -->
+        <div class="row">
+          <div class="column">
+            <div class="content">
+              <img src="/image6.jpeg" alt="Sola_Tech" style="width:100%">
+              <h3 style="font-family: fantasy;">ROLES PLAYED</h3>
+              <p>As a web developer, system administrator, and data scientist, my work revolves around creating and maintaining efficient systems.<br>
+                 I write clean code and build websites that deliver exceptional user experiences.<br>
+                 I also manage server infrastructure and troubleshoot issues to ensure seamless operation.<br>
+                Additionally, I use data analysis and machine learning techniques to extract insights and drive business decisions.</p> 
+            </div>
+            
+          </div>
+      
+          
+        <!-- END GRID -->
+        </div>
+        
+        <div class="content">
+          <img src="/200w.webp" alt="Tech" style="width:30">
+          <h3 style="font-family: fantasy;">Additional Roles</h3>
+          <p>In addition to my primary roles, I also collaborate with cross-functional teams to understand business requirements and deliver solutions that meet their needs. 
+            I keep myself updated with the latest trends and technologies in the field to ensure that my work remains innovative and impactful.
+          </p>
+        </div>
+        
+        <!-- END MAIN -->
+        </div>
+        
+</section>
+<b><marquee behavior="" direction="right" style="font-family: fantasy;"> Experience the power of seamless Technological Solutions.</marquee></b>
+<section class="footer">
+    <p>Copyright &copy; 2023 OduorMarvine</p>
+</section>
+    
+</body>
+</html>

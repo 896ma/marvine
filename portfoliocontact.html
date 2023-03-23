@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<head>
+  <style>
+     *{
+        margin: 0%;
+        padding: 0%;
+    }
+    body{
+        background-color: rgb(27, 184, 196);
+    }
+    .header{
+        justify-content: space-between;
+    }
+    .header .container{
+        justify-content: space-between;
+        display: flex;
+        margin-top: 5px;
+    }
+    .header .logo h1{
+      color: rgb(29, 195, 201);
+      margin-left: 1cm;
+}
+.nav-links ul li{
+    list-style: none;
+    display:inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: palevioletred;
+    text-decoration: none;
+    font-size: 13px;
+
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background:cornflowerblue;
+    display:block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+.subheader .sub h2{
+    text-align: center;
+    margin-top: 3cm;
+}
+.content{
+    display: flex;
+    justify-content: center;
+    width: 1100;
+}
+.content .container{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1cm;
+}
+.content .container .image{
+    margin-left: 1.5cm;
+    width: 600;
+  
+  align-items: center;
+  margin-right: 0.9cm;
+    background-image:url("file:///C:/marvine/image.jpeg");
+    position: relative;
+    background-size:cover;
+   
+    
+}
+.content .container .image p{
+    color: rgb(22, 142, 151);
+    margin-top: 3cm;
+    font-weight: 200;
+    padding: 10px;
+}
+.content .container .mapouter{
+margin-top: 120px;
+height: 60%;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+.footer{
+    margin-top: 2cm;
+    
+}
+.footer .contact{
+margin-left: 80%;
+    align-items: flex-end;
+    margin-top: 5px;
+}
+.copyright .copyrightby p{
+    text-align: center;
+    margin-top: 40px;
+}
+.caption{
+    background-color: aliceblue;
+}
+</style>
+</head>
+<body>
+  <section class="header">
+    <div class="container">   
+    <div class="logo">
+        <h1>O.M</h1>
+    </div>
+    
+    <nav>
+       
+        <div class="nav-links">
+         <menu> <ul>
+             <li><a href="file:///C:/marvine/portfolio.html">HOME</a></li>
+             <li><a href="file:///C:/marvine/portfolioabout.html">ABOUT </a></li>
+             <li><a href="file:///C:/marvine/folioservices.html">SERVICES</a></li>
+              <li><a href="file:///C:/marvine/portfoliocontact.html">CONTACT</a></li>
+            </ul></menu>
+        </div>
+        
+    </nav>
+</section>
+<section class="subheader">
+<div class="sub">
+  <h2>Contact Me</h2>
+ 
+</div>
+</section>
+<section class="content">
+     <div class="container">
+      <div class="image">
+    <b> <p>I'm always available to offer my services in either your company,institution or any other place where technology has rooted.
+        Apart from my proffession you can reach out for anything like talking about life or you want to venture in something,am always there because as far as am concerned,we have formed an organisation in our firm also we reach 
+        out people through our blog where we talk about mental health,good lifestyle and anything with is clean life related.
+     </p></b>
+    
+     
+     <div class="mapouter"><div class="gmap_canvas"><iframe width="100%" height="100%" id="gmap_canvas" 
+        src="https://maps.google.com/maps?q=Allsops-01001&t=&z=10&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" 
+        marginheight="0" marginwidth="0"></iframe><a href="https://2yu.co">2yu</a><br><style>.mapouter{position:relative;
+            text-align:right;height:100%;width:100%;}</style><a href="https://embedgooglemap.2yu.co/">html embed google map</a><style>.gmap_canvas
+             {overflow:hidden;background:none!important;height:100%;width:100%;}</style></div></div>
+     
+      </div>
+      </div>
+    
+               
+
+      <div class="container">
+        <form action="/action_page.php">
+            <h3>Contact Form</h3><br><br>
+          <label for="fname">First Name</label>
+          <input type="text" id="fname" name="firstname" placeholder="Your name..">
+      
+          <label for="lname">Last Name</label>
+          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+      
+          <label for="country">Country</label>
+          <select id="country" name="country">
+            <option value="kenya">Kenya</option>
+            <option value="south africa">South Africa</option>
+            <option value="tanzania">Tanzania</option>
+          </select>
+      
+          <label for="subject">Subject</label>
+          <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+      
+          <input type="submit" value="Submit">
+        </form>
+      </div>
+</section>
+<section class="footer">
+   <div class="contact">
+    <h3>email us</h3>
+     <p>@ solarcrash3@gmail.com</p>
+     <br>
+     <b><p>or contact us on:</p></b>
+    <br>
+     +254768932886 / +254796075948
+      <br>
+       
+   </div>
+      
+   
+</section>
+<section class="copyright">
+    <div class="copyrightby">
+
+        <p>Copyright &copy; 2023 OduorMarvine</p>
+    </div>
+</section>
+<section class="caption">
+
+</section>
+
+
+    </body>
+
+</html>
