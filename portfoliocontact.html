@@ -6,7 +6,7 @@
         padding: 0%;
     }
     body{
-        background-color: rgb(27, 184, 196);
+        background-color: palevioletred;
     }
     .header{
         justify-content: space-between;
@@ -29,14 +29,15 @@
 .nav-links ul li a{
     color: palevioletred;
     text-decoration: none;
-    font-size: 13px;
+    font-size: 19px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 
 }
 .nav-links ul li::after{
     content: '';
     width: 0%;
     height: 2px;
-    background:cornflowerblue;
+    background:darkred;
     display:block;
     margin: auto;
     transition: 0.5s;
@@ -47,6 +48,7 @@
 .subheader .sub h2{
     text-align: center;
     margin-top: 3cm;
+    font-size: 38px;
 }
 .content{
     display: flex;
@@ -70,17 +72,33 @@
    
     
 }
-.content .container .image p{
-    color: rgb(22, 142, 151);
+img {   
+  height: 2.2em;  
+  margin-right: 1.1em;   
+} 
+    .email-container a { 
+  margin-top: 10%;
+  display: flex;
+  justify-content: center; 
+  color: white; 
+  font-size: 25px;
+}
+
+.content .container .image p{ 
+    color: black;
+
     margin-top: 3cm;
     font-weight: 200;
     padding: 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;;
 }
 .content .container .mapouter{
 margin-top: 120px;
-height: 60%;
+height: 60%; 
 }
-
+html{
+  zoom: 0.7;
+}
 input[type=text], select, textarea {
   width: 100%;
   padding: 12px;
@@ -93,7 +111,7 @@ input[type=text], select, textarea {
 }
 
 input[type=submit] {
-  background-color: #04AA6D;
+  background-color: palevioletred;
   color: white;
   padding: 12px 20px;
   border: none;
@@ -114,6 +132,7 @@ input[type=submit]:hover {
     margin-top: 2cm;
     
 }
+
 .footer .contact{
 margin-left: 80%;
     align-items: flex-end;
@@ -122,17 +141,26 @@ margin-left: 80%;
 .copyright .copyrightby p{
     text-align: center;
     margin-top: 40px;
+    font-size: 19px;
 }
 .caption{
     background-color: aliceblue;
 }
+.cont a {
+    text-align: center;
+    font-size: x-large;
+    color: antiquewhite;
+}
+
+
 </style>
 </head>
 <body>
+    <div class="background-image">
   <section class="header">
     <div class="container">   
     <div class="logo">
-        <h1>O.M</h1>
+      
     </div>
     
     <nav>
@@ -145,9 +173,9 @@ margin-left: 80%;
            <li> <a href="portfoliocontact.html">CONTACT</a></li>
             </ul></menu>
         </div>
-        
-    </nav>
-</section>
+         
+    </nav>  
+</section> 
 <section class="subheader">
 <div class="sub">
   <h2>Contact Me</h2>
@@ -157,10 +185,12 @@ margin-left: 80%;
 <section class="content">
      <div class="container">
       <div class="image">
-    <b> <p>I'm always available to offer my services in either your company,institution or any other place where technology has rooted.
-        Apart from my proffession you can reach out for anything like talking about life or you want to venture in something,am always there because as far as am concerned,we have formed an organisation in our firm also we reach 
-        out people through our blog where we talk about mental health,good lifestyle and anything with is clean life related.
+    
+    <b> <p style="font-size: 21px;">I'm always available to offer my services in either your company,institution or any other place whether  technology has rooted there or not.
+        Apart from my profession ,feel free to reach out to me with any adventureous topic within my line of work . Get privileged access now and get in touch with the best there is in the field of Technology.
+    
      </p></b>
+
     
      
      <div class="mapouter"><div class="gmap_canvas"><iframe width="100%" height="100%" id="gmap_canvas" 
@@ -174,40 +204,19 @@ margin-left: 80%;
     
                
 
-      <div class="container">
-        <form action="/action_page.php">
-            <h3>Contact Form</h3><br><br>
-          <label for="fname">First Name</label>
-          <input type="text" id="fname" name="firstname" placeholder="Your name..">
-      
-          <label for="lname">Last Name</label>
-          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-      
-          <label for="country">Country</label>
-          <select id="country" name="country">
-            <option value="kenya">Kenya</option>
-            <option value="south africa">South Africa</option>
-            <option value="tanzania">Tanzania</option>
-          </select>
-      
-          <label for="subject">Subject</label>
-          <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-      
-          <input type="submit" value="Submit">
-        </form>
-      </div>
 </section>
 <section class="footer">
-   <div class="contact">
-    <h3>email us</h3>
-     <p>@ solarcrash3@gmail.com</p>
-     <br>
-     <b><p>or contact us on:</p></b>
-    <br>
-     +254768932886 / +254796075948
-      <br>
-       
-   </div>
+    <div class="email-container">
+                            
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=your.email@gmail.com"><img src="https://ssl.gstatic.com/ui/v1/icons/mail/rfr/logo_gmail_lockup_default_1x.png" alt="Gmail Logo"> Click to email Solarcrash3@gmail.com</a>
+        </div>
+        <section class="cont">
+            <b><a href="https://wa.me/254768932886"><img src="whatsapp.jpeg" alt="WhatsApp Logo">+ 254 768932886</a>
+            </b><br>
+        <b><a href="https://wa.me/254796075948"><img src="whatsapp.jpeg" alt="WhatsApp Logo">+ 254 796075948</a>
+            </b>
+        </section>  
+   
       
    
 </section>
@@ -221,7 +230,7 @@ margin-left: 80%;
 
 </section>
 
-
+</div>
     </body>
 
 </html>

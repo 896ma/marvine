@@ -2,29 +2,19 @@
 <head>
     <meta name="viewppoint" content="with=device-width,initial-scale=1.0">
   <style>
-     *{
-        margin: 0%;
-        padding: 0%;
-    }
+    
     body{
-        background-color:antiquewhite;
-    }
-    .header{
-        justify-content: space-between;
-    }
-    .header .container{
-        justify-content: space-between;
-        display: flex;
-        margin-top: 5px;
-    }
-    .header .logo h1{
-    color: rgb(29, 151, 217);
-    margin-left: 1cm;
+        background-color:black;
     }
     .nav-links{
     flex: 1;
     text-align:end;
     text-combine-upright:initial;
+}
+h5{
+    font-size: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-left: 2%;
 }
 .nav-links ul li{
     list-style: none;
@@ -35,14 +25,15 @@
 .nav-links ul li a{
     color: palevioletred;
     text-decoration: none;
-    font-size: 13px;
+    font-size: 19px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 
 }
 .nav-links ul li::after{
     content: '';
     width: 0%;
     height: 2px;
-    background:cornflowerblue;
+    background:darkred;
     display:block;
     margin: auto;
     transition: 0.5s;
@@ -50,133 +41,151 @@
 .nav-links ul li:hover::after{
     width: 100%;
 }
-.subheader .sub h1{
-    text-align: center;
-    padding: 65px;
-    font-size: xx-large;
-}
-.content{
-    display: flex;
-    justify-content: center;
-    width: 1100;
-}
-.content .container{
-    display: flex;
-    justify-content: space-between;
-    margin-top: 1cm;
-  
 
-}
-.content .container .myphoto{
-    margin-left: 0.5cm;
-    margin-top: 1cm;
-   
-}
-
-
-
-.content .container .aboutme{
-   
-    width: 600;
-  height: 900;
-  align-items: center;
-  margin-right: none;
- 
-}
-.content .container .aboutme p{
-    text-align: left;
-   margin-left: 2cm;
-    font-weight: lighter;
-}
-.content .container .aboutme h3{
-    
-    margin-left: 3.5cm;
-}
-.more {
-    display: flex;
-    margin-top: 2cm;
-    width:1100;
-   
-
- 
-}
-.more .container {
-    display: flex;
-   
-    flex-wrap: wrap;
-}
-.more .container .profession {
-    width: 400px;
-  height: 400px;
-  margin: 10px;
-  background-color:hwb(188 4% 12%);
-  margin-left: 2cm;
- 
-  
-}
-.more .container .profession h3{
-  text-align: center;
-}
-.more .container .profession p{
-  text-align: center;
-  margin-top: 5px;
-}
-
-.more .container .skills{
-    width: 500px;
-  height: 400px;
-  margin: 10px;
-  background-color: hwb(188 4% 12%);
-  margin-left: 3cm;
-  
- 
-}
-.highlight {
-    background-color: hwb(188 4% 12%); /* Change this to the color you want */
-
-  }
- 
-
-  tr:nth-child(even) {
-    background-color: hwb(188 4% 12%); /* Change this to the color you want */
-  }
-
-
-.more .container .skills h3{
-    text-align: center;
-}
-.more .container .skills p {
-    text-align: center;
-    margin-top: 5px;
-}
-.skills ul li{
-    margin-left: 22px;
-}
-
-.footer p{
-    text-align:center;
-    margin-top: 1.5cm;
-}
-
- 
 .copyright .copyrightby p{
     text-align: center;
     margin-top: 40px;
     color: rgb(6, 87, 121);
+    font-size: 21px;
+    position: fixed;
+    bottom: 0;
+    width: 80%;
+    
+   
+}
+
+
+.first-word {
+    color:antiquewhite
+  }
+  /* style for the second word */
+  .second-word {
+    color: palevioletred;
+  }
+
+  p{
+    line-height: 2.0;
+    align-items: left;   
+    color: antiquewhite;
+    margin-left: 2%;
+    font-size: 19px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+  }
+  .header{
+    justify-content: space-between;
+  }
+
+.footer{
+    text-align: center;
+    padding: 10%;
+   
+    position: fixed;
+    bottom: 0;
+    left: 0;
+
+}
+
+.cv a {
+  background-color:palevioletred;
+  color:black;
+  font-weight: bold;
+  padding: 14px 25px;
+  text-align: left;   
+  text-decoration: none;
+  display: inline-block;
+  margin-left: 6%;
+  margin-top: 3%;
+  margin-bottom: 3%;
+  border-radius: 5px;
+  font-size: larger;
+  font-family: cursive;
+  transition: 0.5ms;
+}
+
+.cv a:hover {
+  color: darkred;
+  text-decoration: none;
+  transition: 0.5ms;
+}
+.images{
+    width: 45%;
+    height: 80%;
+    position: absolute;
+    bottom: 10%;
+    right: 100px;
+}
+
+.images img{
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    transition: bottom 1s, left 1s;
+}
+.images:hover .shape{
+    bottom: 40px;
+}
+h2{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: darkred;
+    margin-left: 6%;
+}
+
+.images:hover .girl{
+    left: 45%;
+}
+        .github-link {
+            display: flex;
+            align-items: left;
+            margin-left: 2%;
+            color: antiquewhite;
+        }
+        
+        .github-logo {
+            width: px;
+            height: px;
+            margin-left: 2%;
+        }
+        .twitter-logo {
+            width: 75px;
+            height: 75px;
+            margin-left:4%;
+
+        }
+        .linkedin-logo {
+            width: 75px;
+            height: 70px;
+            margin-left: 4%;
+        }
+        .linkedin-link {
+        display: flex;
+        align-items: left;
+        }
+        .twitter-link {
+            display: flex;
+            align-items: left;
+        }
+ .just a{ 
+            color:palevioletred; 
+            text-decoration: none; 
+        }
+        
+ a:hover {
+            color:darkred;
+            text-decoration: underline;
+ }
+ html{
+  zoom: 0.7;
 }
 </style>
 
 </head>
 <body>
-
+  
   <section class="header">
-    <div class="container">
-    <div class="logo">
-        <h1>O.M</h1>
-    </div>
     
-    <div>
-       
         <div class="nav-links">
          <menu> <ul>
              <li><a href="index.html">HOME</a></li>
@@ -185,128 +194,66 @@
               <li><a href="portfoliocontact.html">CONTACT</a></li>
             </ul></menu>
         </div>
-    </div>
-        
-    </nav>
+     
+    <div>   
+    </div>  
+</section>  
+
+
+<b><h5 > <span class="first-word"> HI , I  AM ODUOR</span> <span class="second-word">MARVINE</span></h5></b>
+<p>On this page , I provide you with personal details of myself ,including  my Education, Skills, Jobs that I have completed, Age and many more.<br>
+    I will also provide links to my social media accounts like Twitter and Linked In where you can evaluate  me .<br>
+    I have also included a link to my github account where you can get access to my code base and view my repositories.Welcome.<br></p>
+ <section class="just">
+    <h2>ABOUT ME</h2>
+    <p>I am a Software Engineer, 21 years of Age ,majoring in Full-Stack Web Development and<br>
+    currently pursuing a bachelors degree in Information Technology at Kenyatta University,<br>
+    in Nairobi, Kenya and Cyber Security at Moringa School.I am also the founder of a  software company<br>
+    called Solatech Solutions link  :  <a href="https://solatech.surge.sh" class="link">solatech.surge.sh</a>, that offers  a variety of software fixes including<br>
+    installations and sale of pc games.
+    </p> 
 </section>
-<section class="subheader">
-    <div class="sub">
-        <h1>About Me</h1>
-    </div>
-   </section>
-<section class="content">
-    <div class="container">
-   <div class="myphoto">
-   <img src="image2.jpeg" height="300" width="400" class ="logo">
-   </div>
-   <div class="aboutme">
-    <b><p style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
-           I am ODUOR MARVINE. A highly motivated and skilled system analyst and a programmer with 7 years of experience 
-        in the field.I have a strong technical background, with expertise in a variety of programming languages ,UML designs
-        and technologies. 
-        I also  possess excellent problem-solving skills, communication skills, and a strong work ethic. </p> <br><br><br>
-        <h3>Education</h3><br><br>
-      <p> 2023-2022:Project leader Equator Bottlers<br><br>
-        2022-2021:System Administrator SOLA_TECH SOLUTIONS<br>
-     2021-2020:Lead in  Ugunja Syystem Design,system manager Ugunja enterprises<br>
-     2020-2019:Intern Massachussetts  Top android developer SOLA_CODES<br>
-     2019-2015:KANGA HIGH SCHOOL<br>
-     2014-2002:Sifuyo Primary school<br>
-    </p></b>
-    </div>
-    </div>
- </section>
- <section class="more">
-    <div class="container">
-        <div class="profession">
-           <h3> Profession </h3>
-           <p >
-            As a system analyst and app developer,i'm responsible for analyzing and designing computer systems and software applications that meet the needs of your clients or users. Using technical knowledge and analytical skills to identify requirements, evaluate systems and software, and develop solutions that improve efficiency, productivity, and user experience.
-
-            I work closely with stakeholders to gather requirements, analyze data, and design systems that meet business needs.I'm responsible for ensuring that systems are designed and implemented efficiently, cost-effectively, and with scalability in mind.
-            
-            Highly skilled front-end developer with experience in HTML, CSS, JavaScript, and various front-end frameworks and libraries. Proven ability to design and develop user-friendly, responsive, and visually appealing web applications. Strong problem-solving skills
-             and ability to work effectively in a team. Currently seeking a challenging front-end development role to contribute to the growth and success of a dynamic organization
-           </p>
-        </div>
-        <div class="skills">
-               <h3>Skills</h3>
-               <p> 
-                <ul style="list-style-type:square;">
-                    <li> Programming languages: Java, Python,HTML, JavaScript, SQL</li>
-                      <li>Web development technologies: HTML, CSS, React,Angular,Node</li>
-                      <li> System analysis tools: Microsoft Visio</li>
-                      <li> Project management: Agile methodologies, Scrumproject planning, risk management
-                    </li>
-                </ul>
-
-               </p>
-        </div>
- </div>
- </section>
-
+<section class="cv">
+    <a href ="Oduor Marvine CV.docx" download>DOWNLOAD CV</a>
+</section>
  
- <p>Welcome to my website! I am thrilled to share with you my passion for software development ,AI programming and system analysis. With years of experience in this field,
-    I take pride in creating beautiful and functional applications that not only meet your needs but exceed your expectations. As an app developer and 
-    system analyst, I am committed to providing innovative solutions that optimize your business processes, improve user experience, and enhance overall efficiency. 
-   My goal is to bring your vision to reality and provide you with the tools you need to succeed in today's digital landscape. Thank you for visiting,
-    and I look forward to working with you!</p> 
-
-<a href="file:///C:/marvine/portfolioabout.html">check out this link</a>
-
-
-
- 
+<div class="images">
+   
+    <img src="mn.jpg" class="girl">
 </div>
-<b><h3 style ="font-family:courier ;">ENGINEERING AND TECHNOLOGY</h3></b>
-<table style ="width: 80%" align ="center">
-<b><caption> Sample Table</caption></b>
-<tr >
-    <td width= "50%"> Time </td>
-    <th width = "150"> Monday </th>
-    <th width = "150"> Tuesday</th>
-    <th width = "150"> Wednesday </th>
-    <th width =" 150"> Thu rsday</th>
-    <th width = "150"> Friday</th>
-    </tr>
+<p>I have aided in the coding community by airing out my skills via projects which are well represented in<br>
+ my repositories in the account below. I have coded several projects  including contracted portfolios,<br>
+ Development of python projects like mini games and adventureous coding excercises.<br>
+ My repositories are coded in several languages including Java ,C, C++, Python ,JavaScript,HTML and Css.
+</p>
 
-    <tr >
-    <td > 6-7pm </td>
-    <td > Look at website</td>
-    <td > free </td>
-    <td > Implementation </td>
-    <td > VIM exit </td>
-    <td > UI Design</td>
-    </tr>
+<p style="color:palevioletred">click the image link below to visit my Github Account</p><a href="https://github.com/896ma" class="github-link">
+    <img src="github.jpeg" alt="GitHub Logo" class="github-logo"></a>
 
-    <tr class="highlight">   
-    <td > 7-8pm </td>
-    <td > Take some notes</td>
-    <td > free </td>
-    <td > Implementation </td>
-    <td > VR </td>
-    <td > AR  </td>
-    </tr>
-    </table>
+<p>I have managed to capture the attention of my followers  by posting hackathon events attended and motivating<br>
+more individuals to join the coding family.Some of the events include the Gaming Solutions Hackathon by<br>
+Africa's Talking hosted in Lavington Nairobi on the last Friday of April  2023.
+</p>
+<p style="color: palevioletred;">Check out my twitter profile here</p>
+<a href="https://twitter.com/pombe_ya_mejja" class="twitter-link">
+    <img src="twitter.png" alt="Twitter Logo" class="twitter-logo"></a>
+<p>I have created a fairly competitive profile in an attempt to capture the attention of my employers and other Job seekers ,<br>
+     as a Front End Developer, Software Engineer, Proofreader of work and a Typing Specialist in the growing Technological industry.</p>
+<p style="color: palevioletred;">Check out my Linked In Account</p>
+ <a href="https://www.linkedin.com/in/Marvine Oduor" class="linkedin-link">
+        <img src="linked.png" alt="LinkedIn Logo" class="linkedin-logo"></a>
+
 
 
 <section class="footer">
- <p  style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
-    <b><p style="font-family: fantasy;">Interests:</p></b><br>
-    As a system administrator, web designer, and analyst with a passion for gaming, I have a unique set of skills that allow me  to manage complex systems, create stunning websites, and analyze data with precision. 
-    My love for gaming has also taught me valuable skills such as problem-solving, attention to detail, and strategic thinking, which I can apply to my work. 
-    This combination of technical expertise and gaming skills makes me  a versatile and innovative professional, always seeking to push boundaries and find new solutions.
-     <br><br>
-     
- </p>
-</section>
-
 <section class="copyright">
-    <div class="copyrightby">
+    <div class="copyrightby"> 
 
         <p>Copyright &copy; 2023 OduorMarvine</p>
     </div>
 </section>
+</section>
+
 
     
 </body>

@@ -8,7 +8,7 @@
         padding: 0%;
     }
     body{
-        background-color: antiquewhite;
+        background-color:black;
         position:relative;
         background-size: cover;
        background-position:calc(); 
@@ -20,7 +20,7 @@
     label {
         display: block;
         margin-bottom: 10px;
-        font-weight: bold;
+        font-weight: bold;  
       }
       select {
         width: 100%;
@@ -43,36 +43,11 @@
         display: flex;
         margin-top: 5px;
     }
-    .header .logo{
-        position: relative;
-        margin-left: 2cm;
-    }
-    .header .logo h1{
-       margin-left: 1cm;
-       color: antiquewhite;
-    }
-    .logo img{
-        border-radius: 50%;
-    }
-    .header .container .logo .image-info{
-    margin-left: 20%;
-    margin-top: 25%;
-    margin-top: O.1cm;
-    border-radius: 80%;
-    width: 400px;
-    height: 600px;
-    position: absolute;
-    background: rgba(0, 0, 0, 0.5);
-  color: rgb(13, 146, 179);
-  text-align: center;
-  padding-top: 50%;
-  display: none;
-
-}
-
- 
-
-
+    
+     html{
+      zoom: 0.7;
+     }
+    
 .fade-on-hover {
   transition: opacity 0.3s ease-in-out;
   opacity: 1;
@@ -94,15 +69,16 @@
 }
 .nav-links ul li a{
     color: palevioletred;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-decoration: none;
-    font-size: 13px;
+    font-size:21px;
 
 }
 .nav-links ul li::after{
     content: '';
     width: 0%;
     height: 2px;
-    background:cornflowerblue;
+    background:darkred;
     display:block;
     margin: auto;
     transition: 0.5s;
@@ -112,25 +88,22 @@
 }
 .subheader{
   margin-top: 0.00001%;
+  margin-left: 1%;
 }
 .subheader .sub h1{
-    text-align: center;
-    color: darkcyan;
+    text-align: left;
+    font-size: x-large;
+    color: antiquewhite;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
  
 }
-
-.back-video{
-  position:absolute;
-  right:0;
-  bottom:0;
-  z-index: -1;
-}
-
-.subheader .sub h3{
-  text-align: center;
-  color: cyan;
-  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
-}
+.subheader .sub h4{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size:43px;
+    text-align: left;
+    color: palevioletred;
+ 
+} 
 
 .content .container h2{
     color: antiquewhite;
@@ -142,36 +115,68 @@
     margin-left: 2cm;
     margin-top: 5px;
     } 
+  #back-video {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -1;
+}
+img {
+  height: 2.2em;  
+  margin-right: 1.1em;   
+} 
+    .email-container a {
+  display: flex;
+  justify-content: center; 
+  color: white; 
+}
+
     
 .footer a:link, a:visited {
-  background-color: lightseagreen;
+  background-color: palevioletred;
   color: white;
   padding: 14px 25px;
   text-align: center;   
-  text-decoration: none;
+  text-decoration:mistyrose;
   display: inline-block;
-  margin-left: 43%;
+  margin-left: 45%;
   border-radius: 5px;
   margin-top: 20%;
-  
+  font-size: larger;
+  margin-bottom:2%;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.mark{
+  font-size: 18px;
+  color: antiquewhite;
 }
 
-a:hover, a:active {
-  background-color: darkcyan;
-}
+
  .copyright .copyrightby p{
-    color: rgb(11, 47, 156);
+    color: antiquewhite;
     text-align: center;
     margin-top: 30px;
+    font-size:19px;
  }
+ @media only screen and (max-width: 400px ){
+  body{
+    width: 100%;
+    margin:0;
+  }
+
+}
 </style>
 </head>
 <body>
   
         <h1>O.M</h1>
 
-      <video  autoplay loop muted plays-inline class="back-video">
-        <source src ="cybersec.mp4" type ="video/mp4">
+      <video  autoplay muted loop  id="back-video">
+        <source src ="Plexus.mp4" type ="video/mp4">
       </video>
        <nav>
         <div class="nav-links">
@@ -185,24 +190,26 @@ a:hover, a:active {
      
         
     </nav>
-</section>
+</section> 
 <section class="subheader">
-<div class="sub">
+ <div class= "sub"> 
 
   
-  <h1>Hello,I am Oduor Marvine </h1><br>
-  <h3>A System Analyst,Progrmmmer ,System Administrator ,and a web Developer  based in Kenya<br>
-   Welcome to my portifolio</h3> <br>
-
-   <img src="image4.jpeg" height="220" width="300" class ="logo">
-
+  <h1>  Hello,I am Oduor Marvine</h1><br>
+  <h1>  A Front End Developer,Software Engineer<br>and an IT Specislist    based in Kenya<br></h1>
+  <h4>  Welcome to my portfolio </h4>
 
 </section>
-
+  
 <section class="footer">
  <a href="portfoliocontact.html">CONTACT LINK</a>
- 
+
 </section>
+<section class="mark">
+  <b><marquee behavior="" direction="right" style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; "> Experience the power of seamless Technological Solutions.</marquee></b>
+</section>
+
+
 <section class="copyright">
     <div class="copyrightby">
 

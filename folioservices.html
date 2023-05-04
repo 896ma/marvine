@@ -8,7 +8,7 @@
         padding: 0%;
     }
     body{
-        background-color: antiquewhite;
+        background-color: black;        
        
         
     }
@@ -19,7 +19,7 @@
         justify-content: space-between;
         display: flex;
         margin-top: 5px;
-    }
+    }   
     .header .logo h1{
        margin-left: 1cm;
        color: antiquewhite;
@@ -38,29 +38,31 @@
 .nav-links ul li a{
     color: palevioletred;
     text-decoration: none;
-    font-size: 13px;
+    font-size: 19px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 
 }
 .nav-links ul li::after{
     content: '';
     width: 0%;
     height: 2px;
-    background:cornflowerblue;
+    background:darkred;
     display:block;
-    margin: auto;
-    transition: 0.5s;
+    margin: auto; 
+    transition: 0.5s; 
 }
-.nav-links ul li:hover::after{
-    width: 100%;
-}
+.nav-links ul li:hover::after{ 
+    width: 100%; 
+} 
 .main {
   max-width: 1000px;
   margin: auto;
+  align-items: left;
 }
 
 h1 {
   font-size: 50px;
-  word-break: break-all;
+  word-break: break-all;      
 }
 
 .row {
@@ -76,7 +78,7 @@ h1 {
 /* Create four equal columns that floats next to each other */
 .column {
   float: left;
-  width: 25%;
+  width: 100%;
 }
 
 /* Clear floats after rows */ 
@@ -86,16 +88,13 @@ h1 {
   clear: both;
 }
 
-/* Content */
-.content {
-  background-color:rgb(32, 187, 207);
-  padding: 10px;
-}
+
+
 
 /* Responsive layout - makes a two column-layout instead of four columns */
 @media screen and (max-width: 900px) {
   .column {
-    width: 50%;
+    width: 100%;
   }
 }
 
@@ -108,17 +107,82 @@ h1 {
 .footer p{
    text-align: center;
 }
+.mode{
+  margin-top: 5%;
+  color:antiquewhite;
 
+}
+h3{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color:palevioletred;
+  font-size: 43px;
+  }
+#back-video {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -1;
+}
+.change{
+  font-size:21px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+.content{
+  align-items: left;
+  margin-left: 1%;
+}
+.content img{
+  margin-top: 4%;
+}
+.copyright .copyrightby p{
+    color: antiquewhite;
+    text-align: center;
+    margin-top: 30px;
+    font-size:19px;
+ }
+ p {
+            line-height: 2.0;
+ }
+ .content .img{
+  width:40%;
+  margin-top: 5%;
+ }
+ .link {
+            color:palevioletred;
+            text-decoration: underline;
+        }
+        
+        .link:hover {
+            color:darkred;
+            text-decoration: none;
+        }
+.logo img {
+  max-width: 15%;
+  height: auto;
+  border-radius:50%;
+}
+html{
+  zoom: 0.7;
+}
 </style>
 </head>
 <body>
 
+  <video  autoplay muted loop  id="back-video">
+    <source src ="network.mp4" type ="video/mp4">
+  </video>
+
   <section class="header">
     <div class="container">
     <div class="logo">
-        <h1>Oduor Marvine</h1>
+       
     </div>
-    
+  
     <nav>
        
         <div class="nav-links">
@@ -133,67 +197,70 @@ h1 {
     </nav>
 </section>
 <section class="content">
-    <div class="main">
 
-        <h1>MY SERVICES</h1>
-        <hr>
+       
+        <h3>MY SERVICES</h3>
+         
        
         <!-- Portfolio Gallery Grid -->
-        <div class="row">
-          <div class="column">
+        
+        
+         
+      
             <div class="content">
-              <img src="/image6.jpeg" alt="Sola_Tech" style="width:100%">
-              <h3 style="font-family: fantasy;">ROLES PLAYED</h3>
-              <p>As a web developer, system administrator, and data scientist, my work revolves around creating and maintaining efficient systems.<br>
-                 I write clean code and build websites that deliver exceptional user experiences.<br>
+              <div class="logo">
+                <img src="solatech.png" alt="Logo">
+              </div>
+              
+              <h3>ROLES PLAYED</h3>
+              <section class="change">
+              <p style="color:antiquewhite">As a front end web developer, Software Engineer and an all round programmer, my work revolves around creating and maintaining efficient systems.<br>
+                 I write clean code and build websites with explicit user interfaces that deliver exceptional user experiences. <br>
                  I also manage server infrastructure and troubleshoot issues to ensure seamless operation.<br>
-                Additionally, I use data analysis and machine learning techniques to extract insights and drive business decisions.</p> 
+                 My strongly desired communication and collaboration skills have seen  me through a wide range of experiences .<br>I have worked with teams and other personnel in delivering desired outcomes in the most exceptional and unpredictable ways.<br>
+                Additionally, I use very dinstinct and world class algorithms to meet an institution's desires and drive business decisions.<br>
+                Through my website, <a href="https://solatech.surge.sh" class="link">solatech.surge.sh</a>, I offer web Development and web hosting services ,including sale of pc games and other softwares, assisted by my panel of developers.<br>
+              </p>
+                
+
+               </section>
             </div>
             
-          </div>
+         
       
           
         <!-- END GRID -->
-        </div>
+        
         
         <div class="content">
-          <img src="/200w.webp" alt="Tech" style="width:30">
+         
+        <img src="image6.jpeg">
+          <h3 >Specializations</h3>
+          <section class ="change">
+          <p style="color:antiquewhite">Even though my reputation has risen ranks in the recent past as an all round talented Developer, I have grown to major within specific interests.<br>
+            It does not go without mention that I have specialized in Front End Web Development and I have come to learn how to handle the task with prowess.<br>
 
-
-          
-    <h1>Cloud and AI Technologies Form</h1>
-    <form action="#" method="post">
-      <label for="cloud-provider">Cloud Service Provider:</label>
-      <select id="cloud-provider" name="cloud-provider">
-        <option value="">--Select a Cloud Service Provider--</option>
-        <option value="AWS">Amazon Web Services (AWS)</option>
-        <option value="Azure">Microsoft Azure</option>
-        <option value="GCP">Google Cloud Platform (GCP)</option>
-        <option value="IBM">IBM Cloud</option>
-      </select>
-      <label for="ai-tech">AI Technologies:</label>
-      <select id="ai-tech" name="ai-tech">
-        <option value="">--Select AI Technologies--</option>
-        <option value="ML">Machine Learning (ML)</option>
-        <option value="DL">Deep Learning (DL)</option>
-        <option value="NLP">Natural Language Processing (NLP)</option>
-        <option value="CV">Computer Vision (CV)</option>
-      </select>
-      
-    </form>
-          <h3 style="font-family: fantasy;">Additional Roles</h3>
-          <p>In addition to my primary roles, I also collaborate with cross-functional teams to understand business requirements and deliver solutions that meet their needs. 
-            I keep myself updated with the latest trends and technologies in the field to ensure that my work remains innovative and impactful.
-          </p>
+            In addition to my primary roles, I also collaborate with cross-functional teams to understand business requirements and deliver solutions that meet their needs. <br>
+            I also keep myself updated with the latest trends and technologies in the field to ensure that my work remains innovative and impactful.<br>
+        </p>
+        </section>
         </div>
         
         <!-- END MAIN -->
-        </div>
+       
         
 </section>
-<b><marquee behavior="" direction="right" style="font-family: fantasy;"> Experience the power of seamless Technological Solutions.</marquee></b>
+<section class="mode">
+<b><marquee behavior="" direction="right" style="font-family:  'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; "> Experience the power of seamless Technological Solutions.</marquee></b>
+</section>
 <section class="footer">
+  
+<section class="copyright">
+  <div class="copyrightby">
+
     <p>Copyright &copy; 2023 OduorMarvine</p>
+    </div>
+    </section>
 </section>
     
 </body>
